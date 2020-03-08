@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="background-color: black">
+
+	<header>
+		<div class="container">
+			<p style="color:azure;font-size:36;text-align: center;"><b>Sentiment prediction for the text</b></p>
+		</div>
+	</header>
+	<div class="results">
+		
+	{% if prediction < 0.5%}
+	<h2 style="color:crimson;text-align:center;">Negative</h2>
+	{% elif prediction >= 0.5%}
+	<h2 style="color:mediumseagreen;text-align: center;">Positive</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
