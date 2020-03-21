@@ -1,1 +1,1 @@
-Sentiment analysis web app using Flask
+Sentiment analysis web app with Flask
