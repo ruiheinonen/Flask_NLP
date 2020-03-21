@@ -1,1 +1,1 @@
-# Flask_NLP
+Sentiment analysis web app using Flask
