@@ -2,6 +2,7 @@ Sentiment analysis web app with Flask :shipit:
 
 Prerequisites
  - Clone the repo
+   - `$git clone https://github.com/ruiheinonen/Flask_sentiment_analysis_app.git
  - Create and activate virtual environment
    - `$virtualenv  venv`
    - `$source venv/bin/activate`
