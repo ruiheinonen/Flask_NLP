@@ -7,6 +7,6 @@ tensorflow==2.3.0
 requests
 nltk
 textblob
-beautifulsoup4
+beautifulsoup
 pandas
 scikit-learn
