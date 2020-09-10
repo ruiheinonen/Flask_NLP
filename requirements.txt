@@ -1,8 +1,8 @@
 keras==2.2.5
-Flask
+Flask==1.1.2
 flask_wtf
-tensorflow=2.3.0
-requests=2.24.0
+tensorflow==2.3.0
+requests==2.24.0
 nltk
 textblob
 beautifulsoup4
