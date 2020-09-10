@@ -1,10 +1,12 @@
 Sentiment analysis web app with Flask :shipit:
 
-Prerequisites\
-`copy repo`\
-`$virtualenv  venv`\
-`source venv/bin/activate`\
-`$pip install -r requirements.txt`
+Prerequisites:\
+ - Clone the repo\
+ - Create and activate virtual environment\
+  - `$virtualenv  venv`\
+  - `$source venv/bin/activate`\
+ - Install dependencies 
+  - `$pip install -r requirements.txt`
 
 To run the application navigate to the folder where app3.py locates and then launch the app from the comamnd line\
 `$ python app3.py`\
