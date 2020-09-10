@@ -56,7 +56,7 @@ def clear_data(text):
     text = text.replace('\n', '')    
     text = re.sub(r"\s+[a-zA-Z]\s+", ' ',text)
     text = re.sub(r'\s+', ' ', text)
-    text = BeautifulSoup(text, 'html5lib').text
+    text = BeautifulSoup(text, 'html.parser').text
     return text
 
 def lowercase(text):
