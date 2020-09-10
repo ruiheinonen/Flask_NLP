@@ -1,10 +1,10 @@
 Sentiment analysis web app with Flask :shipit:
 
-Prerequisites\
- - Clone the repo\
- - Create and activate virtual environment\
-   - `$virtualenv  venv`\
-   - `$source venv/bin/activate`\
+Prerequisites
+ - Clone the repo
+ - Create and activate virtual environment
+   - `$virtualenv  venv`
+   - `$source venv/bin/activate`
  - Install dependencies 
    - `$pip install -r requirements.txt`
 
