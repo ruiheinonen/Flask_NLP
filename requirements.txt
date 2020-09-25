@@ -3,7 +3,7 @@ Flask==1.1.2
 flask_wtf
 numpy==1.16.0
 scipy==1.4.1
-tensorflow==2.3.0
+tensorflow==2.3.1
 requests
 nltk
 textblob
