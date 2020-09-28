@@ -1,6 +1,6 @@
-Sentiment analysis web app with Flask :shipit:
+**Sentiment analysis web app with Flask :shipit:**
 
-Setup:
+**Setup:**
  - Clone the repo
    - `$git clone https://github.com/ruiheinonen/Flask_sentiment_analysis_app.git`
    - `$cd Flask*`
@@ -10,10 +10,10 @@ Setup:
  - Install dependencies 
    - `$pip install -r requirements.txt`
 
-Run the application:
+**Run the application:**
 - `$python app3.py`\
 `*Running on http://localhost:5000/`
 
-Preview:
+**Preview:**
 
 ![](https://github.com/ruiheinonen/Flask_sentiment_analysis_app/blob/master/docs/preview.gif)
