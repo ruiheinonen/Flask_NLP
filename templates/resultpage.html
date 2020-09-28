@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+	<body>
+		<nav class="navba navbar-dark bg-dark">
+			<a class="navbar-brand"  href="{{ url_for('home') }}">Home</a>
+		</nav>
+		<div class="jumbotron d-flex align-items-center">
+			<div class="container">
+				<p style="text-align: center;">Sentiment prediction for the text</p>
+				{% if prediction < 0.5%}
+				<h2 style="color:crimson;text-align:center;">Negative</h2>
+				{% elif prediction >= 0.5%}
+				<h2 style="color:mediumseagreen;text-align: center;">Positive</h2>
+				{% endif %}
+			</div>
+		</div>
+		<a type="button" href="{{ url_for('home') }}" class="btn btn-secondary btn-lg btn-block">Try again</a>
+</body>
+</html>
