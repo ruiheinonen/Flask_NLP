@@ -16,4 +16,4 @@ Run the application:
 
 
 Preview:
-![](preview.gif)
+![](https://github.com/ruiheinonen/Flask_sentiment_analysis_app/blob/master/docs/preview.gif)
