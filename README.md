@@ -1,6 +1,6 @@
 Sentiment analysis web app with Flask :shipit:
 
-Prerequisites:
+Setup:
  - Clone the repo
    - `$git clone https://github.com/ruiheinonen/Flask_sentiment_analysis_app.git`
    - `$cd Flask*`
