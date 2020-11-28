@@ -11,7 +11,7 @@
    - `$pip install -r requirements.txt`
 
 **Run the application:**
-- `$python app3.py`\
+- `$python app31.py`\
 `*Running on http://localhost:5000/`
 
 **Preview:**
