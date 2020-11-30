@@ -12,16 +12,18 @@ from wtforms import TextAreaField , SubmitField
 from wtforms.validators import DataRequired
 from flask import request
 
-import numpy as np
-import pandas as pd 
-from sklearn.preprocessing import LabelEncoder
-
 import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras import models 
 from tensorflow.keras import backend as K
 
+import pickle
+
+"""
+import numpy as np
+import pandas as pd 
+from sklearn.preprocessing import LabelEncoder
 
 import nltk 
 from nltk.corpus import stopwords
@@ -32,18 +34,18 @@ nltk.download('wordnet')
 import os
 import re
 import string
-import pickle
 import requests
 from bs4 import BeautifulSoup
-
 from textblob import TextBlob
 from textblob import Word
+"""
 
 app = Flask(__name__, template_folder='templates')
 @app.route('/')
 def home():
 	return render_template('homepage.html')
 
+"""
 df = pd.read_csv('imdb_sentiment_data_2k.csv')
 
 def clear_data(text):
@@ -125,6 +127,7 @@ X_train = X[:training_samples]                                    # Define train
 y_train = y[:training_samples]                                    # Define train label vector 
 X_val = X[training_samples : training_samples+validation_samples]
 y_val = y[training_samples : training_samples+validation_samples] 
+"""
 
 with open('tokenizer.pickle', 'rb') as handle:
     loaded_tokenizer = pickle.load(handle)
@@ -139,7 +142,7 @@ def predict():
         K.clear_session()
               
         seq = loaded_tokenizer.texts_to_sequences(data)
-        padded = pad_sequences(seq, maxlen=max_length) 
+        padded = pad_sequences(seq, maxlen=len(data) 
         model = models.load_model('sentiment_model.h5')
         pred = model.predict(padded)
         
