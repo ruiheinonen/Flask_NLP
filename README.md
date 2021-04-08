@@ -1,5 +1,7 @@
 **Sentiment analysis web app with Flask :shipit:**
 
+*Trained with IMDB 50k*
+
 **Demo**
 https://sentiment-analysis-flask.herokuapp.com/
 
