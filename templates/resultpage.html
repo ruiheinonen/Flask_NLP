@@ -15,9 +15,9 @@
 		<div class="jumbotron d-flex align-items-center">
 			<div class="container">
 				<p style="text-align: center;">Sentiment prediction for the text</p>
-				{% if prediction < 0.5%}
+				{% if prediction <= 0.51%}
 				<h2 style="color:crimson;text-align:center;">Negative</h2>
-				{% elif prediction >= 0.5%}
+				{% elif prediction > 0.51%}
 				<h2 style="color:mediumseagreen;text-align: center;">Positive</h2>
 				{% endif %}
 			</div>
